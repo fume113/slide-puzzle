@@ -1,0 +1,86 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw !important; /* Lebar 100% dari layar */
+  height: 100vh !important; /* Tinggi 100% dari layar */
+  padding: 10px; /* untuk memberikan ruang di sekitar konten */
+  text-align: center; /* untuk mengatur teks agar berada di tengah */
+}
+
+.bg-image {
+  background: url('./image/bg.jpg') center/cover; /* ganti 'nama-file-gambar.jpg' dengan nama file gambar yang kamu inginkan */
+  background-color: rgba(255, 255, 255, 0.6); /* Nilai alpha mengontrol tingkat transparansi */
+  background-blend-mode: overlay; /* Optional: Efek blend mode (opsional) */
+  position: absolute;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+
+button, .button-stages {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button:hover, .button-stages:hover {
+  background-color: #45a049;
+}
+
+.icon {
+  font-size: 50px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  color: #006284;
+}
+
+a#startBtn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+a#startBtn:hover {
+  background-color: #45a049;
+}
+
+canvas {
+  display: block;
+  border: 2px solid #000;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
